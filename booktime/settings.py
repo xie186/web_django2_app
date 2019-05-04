@@ -125,3 +125,18 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
+### Xie186
+
+#if not DEBUG:
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST_USER = "327696170@qq.com"
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_PORT = 25
+EMAIL_USE_TLS = True
+EMAIL_HOST_PASSWORD = "ymlbqjvdgegbcabc"
+#else:
+#    EMAIL_BACKEND = (
+#        "django.core.mail.backends.console.EmailBackend"
+#    )
