@@ -140,3 +140,10 @@ EMAIL_HOST_PASSWORD = "ymlbqjvdgegbcabc"
 #    EMAIL_BACKEND = (
 #        "django.core.mail.backends.console.EmailBackend"
 #    )
+
+
+# make sure Django knows where to store these files, and where 
+#to serve them from. These two values need to be specified in  booktime/
+#settings.py:
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_URL = "/media/"
